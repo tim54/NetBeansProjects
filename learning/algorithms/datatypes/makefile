@@ -1,9 +1,10 @@
-IDIR =../include
+IDIR =./include
+SRCDIR =./src
 CC=gcc
 CFLAGS=-I$(IDIR)
 
 ODIR=obj
-LDIR =../lib
+LDIR =./lib
 
 LIBS=-lm
 
@@ -13,7 +14,7 @@ DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 _OBJ = hellomake.o hellofunc.o 
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
-$(ODIR)/%.o: %.c $(DEPS)
+$(ODIR)/%.o: $(SRCDIR)/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 hellomake: $(OBJ)
