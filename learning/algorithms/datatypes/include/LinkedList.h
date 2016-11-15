@@ -1,16 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   LinkedList.h
- * Author: artemkovalevsky
- *
- * Created on November 14, 2016, 12:15 PM
- */
-
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
 
@@ -21,10 +8,6 @@ public:
     public:
         int item;
         Node* next;
-
-//        Node();
-//        // Node(int item) { this->item = item; next = nullptr; }
-//        virtual ~Node();
     };
 
     LinkedList();

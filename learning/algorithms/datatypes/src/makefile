@@ -9,7 +9,7 @@ LDIR =../lib
 
 LIBS=-lm
 
-_DEPS = LinkedList.h
+_DEPS = LinkedList.h Queue.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
 _OBJ = datatypestest.o LinkedList.o
