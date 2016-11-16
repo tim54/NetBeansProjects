@@ -1,16 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   usefultest.cpp
- * Author: кей
- *
- * Created on November 15, 2016, 8:53 PM
- */
-
+#include "Date.h"
 #include <cstdlib>
 
 using namespace std;
@@ -19,6 +7,10 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
+    
+    Date date = Date(21, Date::Month(06), 1985);
+    // date.add_day(1);
+    printf("Date is %s", date.string_rep().c_str());
 
     return 0;
 }
